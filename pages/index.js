@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import logo from "../public/images/logo.svg";
+import hero from "../public/images/beanzwashere.jpeg";
+import heroMobile from "../public/images/mobilemeep.jpeg";
+import ctaImage from "../public/images/bean_pod_FINAL2.gif";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Fantasy Garage</title>
         <meta name="description" content="The OG NFT project for car enthusiasts." />
@@ -15,14 +19,14 @@ export default function Home() {
           <div className="flex-grow">
             <div className="flex">
               <a className="w-min-content">
-                <img src="/../images/logo.svg" alt="Fantasy Garage NFT" className="h-7 p-2 rounded hover:bg-red-600 bg-red-700" />
+                <Image className="h-7 p-2 rounded hover:bg-red-600 bg-red-700" src={logo} alt="Fantasy Garage NFT" width="77" height="28" />
               </a>
             </div>
           </div>
           <div className="items-center hidden lg:flex">
             <ul className="flex space-x-2">
               <li>
-                <a href="/allowlist" className="bg-opacity-20 text-black opacity-80 items-center relative h-7 items-center font-mono tracking-wider pt-0.5 first::pt-0 duration-1000 uppercase text-2xs font-500 padding-huge bg-white duration-200 items-center px-4 hover:bg-opacity-70 rounded  flex justify-center flex-row">Allowlist</a>
+                <Link href="/allowlist" className="bg-opacity-20 text-black opacity-80 items-center relative h-7 items-center font-mono tracking-wider pt-0.5 first::pt-0 duration-1000 uppercase text-2xs font-500 padding-huge bg-white duration-200 items-center px-4 hover:bg-opacity-70 rounded  flex justify-center flex-row">Allowlist</Link>
               </li>
               <li>
                 <a href="/map" className="bg-opacity-20 text-black opacity-80 items-center relative h-7 items-center font-mono tracking-wider pt-0.5 first::pt-0 duration-1000 uppercase text-2xs font-500 padding-huge bg-white duration-200 items-center px-4 hover:bg-opacity-70 rounded  flex justify-center flex-row">Map</a>
@@ -72,13 +76,15 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <img className="min-w-screen w-full lg:block bottom-0 transform h-screen object-cover absolute top-0 left-0 object-center overlay-item -z-10" src="/../images/beanzwashere.jpeg" alt="" />
-        <img className="w-full bg-olive lg:hidden bottom-0 transform h-screen object-cover  object-center overlay-item -z-10" src="/../images/mobilemeep.jpeg" alt="" />
+        <Image className="min-w-screen w-full lg:block bottom-0 transform h-screen object-cover absolute top-0 left-0 object-center overlay-item -z-10" src={hero} alt="" />
+        <Image className="w-full bg-olive lg:hidden bottom-0 transform h-screen object-cover  object-center overlay-item -z-10" src={heroMobile} alt="" />
         <div className="fixed h-24 bottom-0 left-0 w-full">
           <div className="grid grid-cols-1 h-24 w-full">
-            <div className="fixed h-20 lg:bottom-8 lg:right-8 bottom-4 lg:px-0 px-4 lg:w-full lg:max-w-2xl w-full">
-              <div className="bg-[#bb3647] w-full text-white rounded relative items-center lg:pr-3 pr-3 h-20 flex items-center shadow-lg">
-                <img className="rounded-md z-100 h-full" src="/../images/bean_pod_FINAL2.gif" alt="" />
+            <div className="fixed h-20 lg:bottom-8 lg:right-8 bottom-4 lg:px-0 px-4 lg:w-full lg:max-w-2xl w-full rounded">
+              <div className="bg-[#bb3647] w-full text-white rounded relative items-center lg:pr-3 px-3 h-20 flex items-center shadow-lg">
+                <div className="rounded-md z-100 h-full relative w-[80px]">
+                  <Image src={ctaImage} alt="" layout="fill" objectFit="cover" />
+                </div>
                 <div className="block lg:mr-4 mr-auto lg:ml-4 ml-0">
                   <p className="font-sans text-3xs tracking-widest font-400 uppercase opacity-50">Something is coming</p>
                   <p className="font-sans uppercase tabular-nums font-700 md:text-xl text-sm">Beanz</p>
