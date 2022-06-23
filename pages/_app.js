@@ -1,5 +1,6 @@
 // import { MoralisProvider } from "react-moralis";
 import "../styles/globals.css";
+import "../styles/animation.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
