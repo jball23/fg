@@ -34,17 +34,17 @@ export const Navbar = () => {
           </li>
           <li className="hidden md:flex flex-col pt-0 relative">
             <ul className="flex flex-col md:flex-row items-center justify-center">
-              <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:mx-2">
+              <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:mx-2">
                 <a href="https://discord.com" target="_blank" rel="noreferrer" className="flex bg-opacity-20 bg-white duration-200 py-2 px-4 hover:bg-opacity-30 rounded">
                   <Discord className="fill-white stroke-white h-4 w-4" />
                 </a>
               </li>
-              <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:mx-2">
+              <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:mx-2">
                 <a href="https://twitter.com/fntsygaragexyz" target="_blank" rel="noreferrer" className="flex bg-opacity-20 bg-white duration-200 py-2 px-4 hover:bg-opacity-30 rounded">
                   <Twitter className="fill-white stroke-white h-4 w-4" />
                 </a>
               </li>
-              <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:ml-2">
+              <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:ml-2">
                 <a href="https://instagram.com/fantasygarage.xyz" target="_blank" rel="noreferrer" className="flex bg-opacity-20 bg-white duration-200 py-2 px-4 hover:bg-opacity-30 rounded">
                   <Instagram className="fill-white stroke-white h-4 w-4" />
                 </a>
@@ -62,19 +62,19 @@ export const Navbar = () => {
           } md:hidden w-full bg-black bg-opacity-90 fixed left-0 right-0 top-0 bottom-0 h-screen z-20 overscroll-none` }
         >
           <ul className="md:hidden flex flex-col items-center justify-center h-screen">
-            <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:mx-2">
+            <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:mx-2">
               <a href="https://discord.com" target="_blank" rel="noreferrer" className="md:bg-opacity-20 bg-white duration-200 py-4 px-4 md:py-2 w-full rounded flex flex-col items-center justify-center">
                 <Discord className="fill-pink-500 md:fill-white stroke-pink-500 md:stroke-white h-4 w-4" />
                 <span className="text-pink-500 font-bold">Discord</span>
               </a>
             </li>
-            <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:mx-2">
+            <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:mx-2">
               <a href="https://twitter.com/fntsygaragexyz" target="_blank" rel="noreferrer" className="md:bg-opacity-20 bg-white duration-200 py-4 px-4 w-full  rounded flex flex-col items-center justify-center">
                 <Twitter className="fill-pink-500 md:fill-white stroke-pink-500 md:stroke-white h-4 w-4" />
                 <span className="text-pink-500 font-bold">Twitter</span>
               </a>
             </li>
-            <li className="max-w-[50%] w-full md:w-auto my-3 md:my-auto md:ml-2">
+            <li className="max-w-50per w-full md:w-auto my-3 md:my-auto md:ml-2">
               <a href="https://instagram.com/fantasygarage.xyz" target="_blank" rel="noreferrer" className="md:bg-opacity-20 bg-white duration-200 py-4 md:py-2 px-4 w-full rounded flex flex-col items-center justify-center">
                 <Instagram className="fill-pink-500  md:fill-white stroke-pink-500 md:stroke-white h-4 w-4" />
                 <span className="text-pink-500 font-bold">Instagram</span>

@@ -13,9 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="flex items-center justify-center max-h-[200px] md:max-h-[300px] bg-pink-500">
-        <div className="w-[300px] md:w-[600px] lg:w-[1000px]">
-          <div className="animation"></div>
+      <div className="animation-outer-wrapper flex items-center justify-center bg-pink-500">
+        <div className="animation-inner-wrapper">
+          <div className="animation-frame"></div>
         </div>
       </div>
       <Cta
