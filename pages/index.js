@@ -6,7 +6,7 @@ import { Cta } from '../components/Cta';
 
 export default function Home() {
   return (
-    <div className="bg-pink-500 h-screen flex flex-col justify-between">
+    <div className="bg-pink-500 u-100vh flex flex-col justify-between">
       <Head>
         <title>Fantasy Garage</title>
         <meta name="description" content="The drifters of the internet." />

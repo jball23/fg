@@ -24,3 +24,7 @@ a {
 .max-w-50per {
   max-width: 50%;
 }
+
+.u-100vh {
+  height: 100vh;
+}
