@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import ctaImage from "../public/images/bean_pod_FINAL2.gif";
 import { Navbar } from '../components/Navbar';
 import { Cta } from '../components/Cta';
 

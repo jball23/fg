@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Instagram from "./Icons/Instagram.js";
 import Discord from "./Icons/Discord.js";
@@ -17,16 +16,16 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='lg:items-center w-full top-0 lg:pt-8 pt-5 z-10 lg:px-8 lg:right-8'>
-        <ul className="flex h-full lg:px-8 px-4 border-b border-white items-center justify-between max-w-11xl mx-auto border-opacity-0 relative">
-          <li>
-            <h1 className="p-2 relative border-box">
-              <Image src={logo} alt="Fantasy Garage - Project M3 NFT" height="100px" width="150px" />
+      <nav className='w-full top-0 pt-5 md:pt-8 z-10 lg:px-8 lg:right-8'>
+        <ul className="flex h-full lg:px-8 px-4 border-b border-white items-center justify-center landscape:justify-between md:justify-between max-w-11xl mx-auto border-opacity-0 relative">
+          <li className="flex relative border-box md:top-0 top-9 landscape:top-0 w-52 h-36 md:w-44 md:h-36">
+            <h1>
+              <Image src={logo} alt="Fantasy Garage - Project M3 NFT" layout="fill"/>
             </h1>
           </li>
           <li>
             <button
-              className='p-3 bg-white bg-opacity-20 rounded md:hidden ml-auto outline-none relative z-30'
+              className='p-3 bg-white bg-opacity-20 rounded md:hidden ml-auto outline-none z-30 fixed right-4 top-4'
               onClick={handleClick}
             >
               <Hamburger className="w-6 h-6 stroke-white"/>
