@@ -19,8 +19,8 @@ export const Navbar = () => {
       <nav className='w-full top-0 pt-5 md:pt-8 z-10 lg:px-8 lg:right-8'>
         <ul className="flex h-full lg:px-8 px-4 items-center justify-center landscape:justify-between md:justify-between max-w-11xl mx-auto relative">
           <li className="flex relative border-box md:top-0 top-9 landscape:top-0 w-52 h-36 md:w-44 md:h-36">
-            <h1>
-              <Image src={logo} alt="Fantasy Garage - Project M3 NFT" layout="fill"/>
+            <h1 className="relative w-52 h-36 md:w-44 md:h-36">
+              <Image src={logo} alt="Fantasy Garage - Project M3 NFT" layout="fill" priority/>
             </h1>
           </li>
           <li>
