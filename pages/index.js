@@ -7,11 +7,16 @@ export default function Home() {
     <div className="bg-fg-pink u-100vh flex flex-col justify-between">
       <Head>
         <title>Fantasy Garage</title>
-        <meta name="description" content="The drifters of the internet." />
-        <meta name="application-name" content="Fantasy Garage" />
+        <meta name="description" content="The OG NFT project for car enthusiasts." />
+        <meta name="application-name" content="Fantasy Garage NFT - Project M3" />
         <meta name="msapplication-TileColor" content="#ec008c" />
         <meta name="theme-color" content="#ec008c" />
-        <meta name="apple-mobile-web-app-title" content="Fantasy Garage" />
+        <meta name="apple-mobile-web-app-title" content="Fantasy Garage NFT - Project M3" />
+        <meta property="og:title" content="Fantasy Garage NFT - Project M3" />
+        <meta property="og:description" content="The OG NFT project for car enthusiasts." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fantasygarage.xyz" />
+        <meta property="og:image" content="https://fg-kappa.vercel.app/images/e30m3/og-home.jpg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
