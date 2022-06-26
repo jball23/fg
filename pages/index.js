@@ -8,12 +8,12 @@ export default function Home() {
       <Head>
         <title>Fantasy Garage</title>
         <meta name="description" content="The OG NFT project for car enthusiasts." />
-        <meta name="application-name" content="Fantasy Garage NFT - Project M3" />
+        <meta name="application-name" content="Fantasy Garage NFT - app name" />
         <meta name="msapplication-TileColor" content="#ec008c" />
         <meta name="theme-color" content="#ec008c" />
-        <meta name="apple-mobile-web-app-title" content="Fantasy Garage NFT - Project M3" />
+        <meta name="apple-mobile-web-app-title" content="Fantasy Garage NFT - apple mobile app title" />
         <meta property="og:title" content="Fantasy Garage NFT - Project M3" />
-        <meta property="og:description" content="The OG NFT project for car enthusiasts." />
+        <meta property="og:description" content="The one that started it all. Minting soon." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fantasygarage.xyz" />
         <meta property="og:image" content="https://fg-kappa.vercel.app/images/e30m3/og-home.jpg" />
