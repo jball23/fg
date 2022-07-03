@@ -1,6 +1,6 @@
 .animation {
   &-outer-wrapper {
-    max-height: 300px;
+    max-height: 563px;
   }
 
   &-inner-wrapper {
@@ -8,10 +8,10 @@
   }
 
   &-frame {
-    height: 493px;
+    height: 563px;
     width: 1000px;
     background: url("../public/images/e30m3/css_sprites.png");
-    animation: sprite 2s steps(8) infinite;
+    animation: sprite 3s steps(13) infinite;
     transform: scale(1);
   }
 }
@@ -46,5 +46,5 @@
 }
 
 @keyframes sprite {
-  to { background-position: -8000px; }
+  to { background-position: -13000px; }
 }
