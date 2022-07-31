@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <Cta
           heading="Get your keys"
-          subHeading="Project M3"
+          subHeading="Project E30"
           buttonText="Join Our Discord"
         />
     </div>
