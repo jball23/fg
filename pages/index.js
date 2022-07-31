@@ -1,8 +1,26 @@
-import Head from "next/head";
+import Head from 'next/head';
+import Script from 'next/script';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { sendPageview } from '../lib/analytics';
 import { Navbar } from '../components/Navbar';
 import { Cta } from '../components/Cta';
 
 export default function Home() {
+  const { events } = useRouter();
+
+  const handleChange = (url) => {
+    sendPageview(url);
+  };
+
+  useEffect(() => {
+    events.on('routeChangeComplete', handleChange);
+
+    return () => {
+      events.off('routeChangeComplete', handleChange);
+    };
+  }, [events]);
+
   return (
     <div className="bg-fg-pink u-100vh flex flex-col justify-between">
       <Head>
@@ -23,6 +41,24 @@ export default function Home() {
         <link rel="manifest" href="/images/favicon/site.webmanifest" />
         <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5ec008" />
       </Head>
+      <Script
+        strategy="beforeInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <Navbar />
       <div className="animation-outer-wrapper flex items-center justify-center bg-fg-pink">
         <div className="animation-inner-wrapper">
