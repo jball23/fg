@@ -6,7 +6,14 @@ export const Cta = ({ image, heading, subHeading, buttonText }) => {
       <div className="bg-white p-4 bg-opacity-20 text-white flex flex-col md:flex-row items-center w-full md:w-auto text-center md:text-left rounded shadow-lg relative z-0">
         { image?
           <div className="rounded-md z-10 h-full relative w-[80px]">
-            <Image src={image} alt="" layout="fill" objectFit="cover" />
+            <Image
+              src={image}
+              alt=""
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </div>
           :
           null
