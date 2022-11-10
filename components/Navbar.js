@@ -3,8 +3,7 @@ import Instagram from "./Icons/Instagram.js";
 import Discord from "./Icons/Discord.js";
 import Twitter from "./Icons/Twitter.js";
 import Hamburger from "./Icons/MobileNav.js";
-import logo from "../public/images/logo-stacked-white.svg";
-
+import Link from 'next/link';
 import { useState } from 'react';
 
 export const Navbar = () => {
@@ -17,16 +16,19 @@ export const Navbar = () => {
   return <>
     <nav className='w-full top-0 pt-5 md:pt-8 z-10 lg:px-8 lg:right-8'>
       <ul className="flex h-full lg:px-8 px-4 items-center justify-center landscape:justify-between md:justify-between max-w-11xl mx-auto relative">
-        <li className="flex relative border-box md:top-0 top-9 landscape:top-0 w-52 h-36 md:w-44 md:h-36">
-          <h1 className="relative w-52 h-36 md:w-44 md:h-36">
-            <Image
-              src={logo}
-              alt="Fantasy Garage - Project M3 NFT"
-              priority
-              fill
-              sizes="100vw" />
-          </h1>
-        </li>
+        <Link href="/" passHref>
+          <li className="flex relative border-box md:top-0 top-9 landscape:top-0 w-52 h-36 md:w-44 md:h-36">
+            <h1 className="relative w-52 h-36 md:w-44 md:h-36">
+              <Image
+                src="/images/logo-stacked-white.svg"
+                alt="Fantasy Garage - Project E30 NFT"
+                priority
+                fill
+                sizes="100%"
+                as="other" />
+            </h1>
+          </li>
+        </Link>
         <li>
           <button
             className='p-3 bg-white bg-opacity-20 rounded md:hidden ml-auto outline-none z-30 fixed right-4 top-4'
