@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const Cta = ({ image, heading, subHeading, buttonText }) => {
   return (

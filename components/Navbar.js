@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Instagram from "./Icons/Instagram.js";
 import Discord from "./Icons/Discord.js";
 import Twitter from "./Icons/Twitter.js";
